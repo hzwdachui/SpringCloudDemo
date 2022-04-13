@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SpringCloudDemo1Service2" />
+        <module name="SpringCloudDemo1Service1" />
+        <module name="SpringCloudDemo1GatewayServer" />
+        <module name="SpringCloudDemo1EurekaServer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SpringCloudDemo1Api" target="1.7" />
+      <module name="SpringCloudDemo1EurekaServer" target="1.8" />
+      <module name="SpringCloudDemo1GatewayServer" target="1.8" />
+      <module name="SpringCloudDemo1Service1" target="1.7" />
+      <module name="SpringCloudDemo1Service2" target="1.7" />
+      <module name="test" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringCloudDemo1EurekaServer" options="-parameters" />
+      <module name="SpringCloudDemo1GatewayServer" options="-parameters" />
+    </option>
+  </component>
+</project>

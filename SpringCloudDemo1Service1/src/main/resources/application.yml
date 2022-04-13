@@ -1,0 +1,16 @@
+server:
+  port: 8701 # 服务提供方
+
+# 指定当前eureka客户端的注册地址,
+eureka:
+  client:
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8700/eureka
+  instance:
+    hostname: localhost
+    appname: demo-server1
+
+#当前服务名称
+spring:
+  application:
+    name: demo-server1

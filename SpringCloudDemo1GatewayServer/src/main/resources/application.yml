@@ -1,0 +1,25 @@
+server:
+  port: 8600
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:8700/eureka
+  instance:
+    hostname: localhost
+    appname: demo-gateway-server
+
+spring:
+  main:
+    web-application-type: reactive
+  application:
+    name: demo-gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lowerCaseServiceId: true
+
